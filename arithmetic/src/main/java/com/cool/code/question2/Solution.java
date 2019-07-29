@@ -64,11 +64,58 @@ public class Solution {
 		return res;
 	}
 
+
+	/**
+	 * 非递归解法
+	 * @param l1
+	 * @param l2
+	 * @return
+	 */
+	public static ListNode addTwoNumbers1(ListNode l1, ListNode l2){
+
+		// 进位标识
+		int flag = 0;
+		// 值
+		int value ;
+		// 定义俩个引用指向同一列表
+		ListNode listNode = new ListNode(0);
+		ListNode res = listNode;
+		// 如果l1,l2不为空，则循环
+		while (l1 != null || l2 != null){
+			value = flag;
+			if(l1 != null){
+				value += l1.val;
+				l1 = l1.next;
+			}
+			if(l2 != null){
+				value += l2.val;
+				l2 = l2.next;
+			}
+			// 当相加值大于10时，产生进位
+			if(value >=10){
+				flag=1;
+				value -=10;
+			}else{
+				flag = 0;
+			}
+			res.next = new ListNode(value);
+			res = res.next;
+		}
+		// 如果进位标识不为0，则说明最后会产生进位，例如 5 + 5
+		if(flag!=0){
+			res.next=new ListNode(1);
+		}
+		return listNode.next;
+	}
+
 	public static void print(ListNode node){
-		ListNode t = node.next;
-		PrintUtils.controlPrint(node.val);
-		if (t != null){
-			print(node.next);
+		if(node == null){
+			return;
+		}
+		ListNode t = node;
+		while (t !=null){
+			PrintUtils.controlPrint(t.val);
+			t = t.next;
 		}
 		return;
 	}
