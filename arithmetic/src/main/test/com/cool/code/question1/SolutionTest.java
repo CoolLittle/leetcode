@@ -1,9 +1,7 @@
 package com.cool.code.question1;
 
-import com.cool.code.common.PrintUtils;
+import com.cool.common.PrintUtils;
 import org.junit.Test;
-
-import static org.junit.Assert.*;
 
 /**
  * @description:

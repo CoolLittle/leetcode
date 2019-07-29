@@ -1,6 +1,6 @@
 package com.cool.code.question2;
 
-import com.cool.code.common.PrintUtils;
+import com.cool.common.PrintUtils;
 
 /**
  * @description:
