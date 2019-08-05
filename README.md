@@ -1,4 +1,4 @@
-# leetcode
+# LeetCode
 LeetCode刷题个人笔记
 
 arithmetic  算法模块
