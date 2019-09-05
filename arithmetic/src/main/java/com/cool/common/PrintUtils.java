@@ -32,6 +32,9 @@ public class PrintUtils {
 	public static void controlPrint(int args){
 			System.out.println(args);
 	}
+	public static void controlPrint(String args){
+			System.out.println(args);
+	}
 	public static void controlPrint(double args){
 			System.out.println(args);
 	}
