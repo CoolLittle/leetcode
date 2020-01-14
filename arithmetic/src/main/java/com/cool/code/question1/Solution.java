@@ -8,6 +8,7 @@ package com.cool.code.question1;
 public class Solution {
 	public static int[] twoSum(int[] nums, int target) {
 		int[] reVal = new int[2];
+		Integer a1 = 1;
 		for (int i = 0,len = nums.length;i<len-1;i++){
 			for (int j = i+1;j<len;j++){
 				if(nums[i]+ nums[j] == target){

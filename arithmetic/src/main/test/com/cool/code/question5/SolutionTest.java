@@ -18,7 +18,7 @@ public class SolutionTest {
 	@Test
 	public void longestPalindrome() {
 
-		String res = Solution.longestPalindrome1("cbbd");
+		String res = Solution.longestPalindrome1("qssabbacf");
 
 		String[] array = {"a","b","c",};
 		List a = Stream.of(array).collect(Collectors.toList());
