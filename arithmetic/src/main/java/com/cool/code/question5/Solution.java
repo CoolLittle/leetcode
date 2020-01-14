@@ -11,9 +11,9 @@ public class Solution {
 
 	/**
 	 * 中心扩散法处理
+	 * 	例如：
 	 *   字符串下标：0  1  2  3  4  5  6  7  8  9  10  11
 	 * 	 原始字符串：c  b  b  d  e  f  a  a  f  e  s   d
- 	 *   扩散后数组：0  0
 	 * @param s
 	 * @return
 	 */
@@ -27,13 +27,13 @@ public class Solution {
 			int len1 = expandAroundCenter(s, i, i);
 			// 用于处理偶数
 			int len2 = expandAroundCenter(s, i, i + 1);
-			// 最大长度
+			// 最大长度 如果为奇数说明是以i为中心扩展，例如 aba ,如果为偶数说明以i,i+1为中心进行扩展例如 abba
 			int len = Math.max(len1, len2);
 			// 判断len 返回的长度是否大于目前找到的最大长度
 			if (len > end - start) {
 				// 如果len=1：则开始位置为 i,结束位置为 i 说明无匹配
 				// 如果len=2：则开始位置为 i,结束位置为 i+1
-				// 如果len=3：则开始位置为 i,结束位置为 i+1
+				// 如果len=3：则开始位置为 i-,结束位置为 i+1
 				start = i - (len-1)  / 2;
 				end = i + len / 2;
 			}
