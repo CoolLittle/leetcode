@@ -11,6 +11,12 @@ import java.util.List;
 public class Solution {
 
 
+	/**
+	 * 设置标识符flag用于正向或者逆向获取行
+	 * @param s
+	 * @param numRows
+	 * @return
+	 */
 	public static String convert(String s, int numRows) {
 
 		if(numRows<2){
@@ -22,13 +28,18 @@ public class Solution {
 			rows.add(new StringBuffer());
 		}
 		int i = 0;
-		int flag = -1;
+		boolean flag = true;
 		for (char c:s.toCharArray()) {
 			rows.get(i).append(c);
+			// 如果i为0、或者i为行数-1下标 则进行逆转方向获取行数
 			if(i == numRows-1 ||  i==0){
-				flag = -flag;
+				flag = !flag;
 			}
-			i+=flag;
+			if(flag){
+				i++;
+			}else{
+				i--;
+			}
 		}
 		StringBuilder str = new StringBuilder();
 		for (i = 0; i < numRows; i++) {
