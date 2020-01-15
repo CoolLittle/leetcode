@@ -33,6 +33,7 @@ public class Solution {
 			// 在编译期就会报错：Integer number too large，所以如果方法的形参不是int类型的话，
 			// 可以加上这些判断，但是如果方法的形参是int的话，完全不用考虑这些判断，
 			// 因为在传递这个值的时候，编译期就报错了
+			// 即不可能出现 463847414(1) 因为int溢出编译报错
 			if (rev > Integer.MAX_VALUE/10 || (rev == Integer.MAX_VALUE / 10 && pop > 7)) {
 				return 0;
 			}

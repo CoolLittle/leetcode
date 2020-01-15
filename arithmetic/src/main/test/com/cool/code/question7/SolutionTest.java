@@ -14,6 +14,7 @@ public class SolutionTest {
 
 	@Test
 	public void reverse() {
-		PrintUtils.controlPrint(Solution.reverse(1463847412));
+		//2147483647
+		PrintUtils.controlPrint(Solution.reverse(463847414));
 	}
 }
