@@ -4,6 +4,7 @@ import com.cool.common.PrintUtils;
 
 /**
  * @description:
+ * 2、两数相加
  * Definition for singly-linked list.
  * public class ListNode {
  *     int val;
@@ -21,7 +22,7 @@ public class Solution {
 	 * @param l2
 	 * @return
 	 */
-	public static ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+	public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
 
 		int value = l1.val + l2.val;
 		ListNode res;
@@ -71,7 +72,7 @@ public class Solution {
 	 * @param l2
 	 * @return
 	 */
-	public static ListNode addTwoNumbers1(ListNode l1, ListNode l2){
+	public ListNode addTwoNumbers1(ListNode l1, ListNode l2){
 
 		// 进位标识
 		int flag = 0;
@@ -108,6 +109,20 @@ public class Solution {
 		return listNode.next;
 	}
 
+
+	/**
+	 * 	链表节点
+ 	 */
+	class ListNode {
+		int val;
+		ListNode next;
+		ListNode(int x) { val = x; }
+	}
+
+	/**
+	 * 打印工具类
+	 * @param node
+	 */
 	public static void print(ListNode node){
 		if(node == null){
 			return;
@@ -120,8 +135,4 @@ public class Solution {
 		return;
 	}
 }
-class ListNode {
-	int val;
-	ListNode next;
-	ListNode(int x) { val = x; }
-}
+
