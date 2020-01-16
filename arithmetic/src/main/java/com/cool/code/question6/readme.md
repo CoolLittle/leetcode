@@ -1,5 +1,7 @@
 # 6、Z 字形变换
+
 难度：**中等**   
+
 将一个给定字符串根据给定的行数，以从上往下、从左到右进行 Z 字形排列。
 
     比如输入字符串为 "LEETCODEISHIRING" 行数为 3 时，排列如下：
@@ -11,7 +13,7 @@
 
 请你实现这个将字符串进行指定行数变换的函数：
 
-string convert(string s, int numRows);
+`string convert(string s, int numRows)`
 
 ####示例 1:
 
@@ -28,4 +30,4 @@ string convert(string s, int numRows);
         E C   I H   N
         T     S     G
 
-来源：[力扣（LeetCode）](https://leetcode-cn.com/problems/zigzag-conversion)
+#### 来源：[力扣（LeetCode）](https://leetcode-cn.com/problems/zigzag-conversion)
