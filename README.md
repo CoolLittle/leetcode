@@ -2,9 +2,7 @@
 
 > LeetCode刷题个人笔记
 
-## arithmetic  
-
-### 算法模块  
+## arithmetic/算法
 
 1. [两数之和](arithmetic/src/main/java/com/cool/code/question1/readme.md)
 2. [两数相加](arithmetic/src/main/java/com/cool/code/question2/readme.md)
@@ -20,14 +18,9 @@
 507. [完美数](arithmetic/src/main/java/com/cool/code/question507/readme.md)
 1189. [“气球”的最大数量](arithmetic/src/main/java/com/cool/code/question1189/readme.md)
 
-## database
-
-### 数据库模块
+## database/数据库
 
 ## shell
 
-### shell 模块
+## threads/多线程
 
-## threads
-
-### 多线程模块
