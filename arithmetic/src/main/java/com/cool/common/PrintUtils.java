@@ -38,5 +38,8 @@ public class PrintUtils {
 	public static void controlPrint(double args){
 			System.out.println(args);
 	}
+	public static void controlPrint(boolean args){
+			System.out.println(args);
+	}
 
 }
