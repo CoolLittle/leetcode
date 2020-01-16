@@ -47,6 +47,7 @@ public class Solution {
 
 	/**
 	 * 利用位图法计算
+	 * 	因为a-z 为97-122 所以ch-97将a映射到数组0位置
 	 * @param text
 	 * @return
 	 */
