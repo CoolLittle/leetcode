@@ -12,8 +12,8 @@ public class SolutionTest {
 
 	@Test
 	public void twoSum() {
-		int[] nums = new int[]{2, 7, 11, 15};
-		int[] res = Solution.twoSum(nums,9);
+		int[] nums = new int[]{3, 7, 11, 2};
+		int[] res = Solution.twoSum2(nums,9);
 		PrintUtils.controlPrint(res);
 	}
 }
