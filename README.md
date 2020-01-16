@@ -1,6 +1,6 @@
 # LeetCode
 
->>LeetCode刷题个人笔记
+> LeetCode刷题个人笔记
 
 ## arithmetic  
 
@@ -17,6 +17,8 @@
 9. [回文数](arithmetic/src/main/java/com/cool/code/question9/readme.md)
 10. [正则表达式匹配](arithmetic/src/main/java/com/cool/code/question10/readme.md)
 11. [盛最多水的容器](arithmetic/src/main/java/com/cool/code/question11/readme.md)
+507. [完美数](arithmetic/src/main/java/com/cool/code/question507/readme.md)
+1189. [“气球”的最大数量](arithmetic/src/main/java/com/cool/code/question1189/readme.md)
 
 ## database
 
